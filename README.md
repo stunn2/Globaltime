@@ -25,7 +25,8 @@
 5) Ensure that you have an access to the application endpoint externally
 6) Provide an external http link
 
-*** step 5+6: *** 
+*** step 5+6: ***
+
 http://a30bd74f1d3d0424d982077ae04e4364-397579705.eu-west-1.elb.amazonaws.com:8080/
 
 
