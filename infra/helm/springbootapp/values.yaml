@@ -1,0 +1,24 @@
+image: 987313237108.dkr.ecr.eu-west-1.amazonaws.com/main:1.0.0
+Name: globaltimetracker
+replicas: 3
+
+ports:
+  containerport: 8080
+  serviceport: 8080
+
+deploymentlabels:
+  app: frontend
+
+servicetype: LoadBalancer
+
+ingress:
+  enabled: false
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  hosts:
+    - host: a7c8cd15a138041d1857e128ef6a9101-1106174565.eu-west-1.elb.amazonaws.com
+      paths:
+        - path: /
+          pathType: Prefix
+        - path: /health
+          pathType: Prefix
