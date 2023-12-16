@@ -27,6 +27,8 @@
 
 *** step 5+6: *** 
 http://a30bd74f1d3d0424d982077ae04e4364-397579705.eu-west-1.elb.amazonaws.com:8080/
+
+
 http://a30bd74f1d3d0424d982077ae04e4364-397579705.eu-west-1.elb.amazonaws.com:8080/health
 
 7) Upload your code to the Github public repository and provide link to us (put your code to the app, terraform, helm folders accordingly)
